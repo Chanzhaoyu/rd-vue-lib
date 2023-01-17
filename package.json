@@ -2,8 +2,9 @@
   "name": "rd-vue-lib-monorepo",
   "description": "Rd Vue Lib Monorepo",
   "private": true,
-  "main": "index.js",
   "scripts": {
+    "build": "pnpm --filter @rd/web-vue build:component",
+    "example": "pnpm --filter @rd/example dev",
     "reinstall": "rimraf node_modules && rimraf ./packages/*/node_modules && pnpm install"
   },
   "author": "Redon",
