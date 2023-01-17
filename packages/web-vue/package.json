@@ -36,7 +36,7 @@
     ]
   },
   "scripts": {
-    "build:component": "rd-vue-scripts build:component -u"
+    "build:component": "node ./scripts/build.js"
   },
   "devDependencies": {
     "@rd/vue-scripts": "workspace:*",

@@ -1,11 +1,10 @@
 <template>
-  <button :disabled="disabled" @click="handleClick">
+  <button class="rd-button" :disabled="disabled" @click="handleClick">
     <slot></slot>
   </button>
 </template>
 
 <script lang="ts">
-import type { PropType } from 'vue';
 import { defineComponent } from 'vue';
 
 export default defineComponent({
