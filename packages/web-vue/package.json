@@ -1,0 +1,56 @@
+{
+  "name": "@rd/web-vue",
+  "version": "0.1.0",
+  "description": "A Vue.js 3 UI Library",
+  "keywords": [
+    "vue"
+  ],
+  "author": "Redon",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "types": "es/index.d.ts",
+  "unpkg": "dist/arco-vue.min.js",
+  "files": [
+    "es",
+    "lib",
+    "dist",
+    "json"
+  ],
+  "sideEffects": [
+    "dist/*",
+    "es/**/style/*",
+    "lib/**/style/*",
+    "*.less"
+  ],
+  "peerDependencies": {
+    "vue": "^3.1.0"
+  },
+  "lint-staged": {
+    "*.{js,ts,jsx,tsx,vue}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{less,css}": [
+      "stylelint --fix",
+      "prettier --write"
+    ]
+  },
+  "scripts": {
+    "build:component": "rd-vue-scripts build:component -u"
+  },
+  "devDependencies": {
+    "@rd/vue-scripts": "workspace:*",
+    "@typescript-eslint/eslint-plugin": "^5.48.2",
+    "@typescript-eslint/parser": "^5.48.2",
+    "eslint": "^8.32.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-import-resolver-typescript": "^3.5.3",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-vue": "^9.9.0",
+    "prettier": "^2.8.3",
+    "typescript": "^4.9.4",
+    "vue": "^3.2.45"
+  }
+}
