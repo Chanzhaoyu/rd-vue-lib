@@ -3,7 +3,8 @@
   "description": "Rd Vue Lib Monorepo",
   "private": true,
   "scripts": {
-    "build": "pnpm --filter @rd/web-vue build:component",
+    "build:component": "pnpm --filter @rd/web-vue build:component",
+    "build:less": "pnpm --filter @rd/web-vue build:less",
     "example": "pnpm --filter @rd/example dev",
     "reinstall": "rimraf node_modules && rimraf ./packages/*/node_modules && pnpm install"
   },
