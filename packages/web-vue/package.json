@@ -9,7 +9,6 @@
   "main": "lib/index.js",
   "module": "es/index.js",
   "types": "es/index.d.ts",
-  "unpkg": "dist/arco-vue.min.js",
   "files": [
     "es",
     "lib",
